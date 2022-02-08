@@ -4,3 +4,5 @@ console.log(a+b);
 console.log(a-b);
 console.log(a*b);
 console.log(a/b);
+// 변수에 대한 복습//
+//주의: "true"는 boolean값이 아니다 true가 값임
