@@ -1,0 +1,7 @@
+2020/02/08
+What I learned:
+package.json 파일의 용도 --파일에 대한 정보를 저장하는 용도
+dependencies 와 devdependencies의 차이 
+-- dependencies는 내가 만든 패키지를 사용하기 위해 필요한 것 (자동차의 연료와 비슷함)
+-- devdependencies는 개발자를 위한 패키지를 설치하여 놓는 것 (운전할 때 음악고 비슷함)
+babel의 기능 --babel은 최신 자바스크립트를 컴파일 하는 기능을 해준다 > 우리가 최신 자바스크립트를 사용할 수 있게 해준다.
