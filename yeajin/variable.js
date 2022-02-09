@@ -11,3 +11,4 @@ const b = "edin";
 function sayHello(){
     console.log("hello!")
 };
+sayHello();
