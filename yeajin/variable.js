@@ -8,6 +8,6 @@ console.log(a/b);
 //주의: "true"는 boolean값이 아니다 true가 값임
 const a = "yeajin";
 const b = "edin";
-function mine(){
-
+function sayHello(){
+    console.log("hello!")
 };
