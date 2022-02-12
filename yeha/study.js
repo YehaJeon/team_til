@@ -21,3 +21,44 @@ button.addEventListener('click', () => {
 ///2022.02.11
 
 ///&& --> 양쪽이 모두 true 일때
+
+///2022.02.12
+
+const hello = document.querySelector('a');
+console.log(hello);
+
+const yeha = document.querySelector('#yeha');
+console.log(yeha);
+
+const nico = document.querySelector('.nico');
+console.log(nico);
+
+const wowQ = document.querySelectorAll('.wow');
+// const wowQ = document.querySelector('.wow');
+console.log(wowQ);
+
+const yehaClass = document.getElementsByClassName('yh');
+// const yeha = document.getElementByClassName('yh');
+console.log(yehaClass);
+
+const byesClass = document.getElementsByClassName('bye');
+console.log(byesClass);
+///동일한 class 존재 가능
+console.log(byesClass[0]);
+
+const yehaId = document.getElementById('yh');
+console.log(yehaId);
+
+const byesId = document.getElementById('bye');
+// const byesId = document.getElementsById('bye');
+console.log(byesId);
+///동일한 id 속성 존재하면 안됨
+
+const wow = document.getElementsByTagName('span');
+console.log(wow);
+
+const wowName = document.getElementsByName('wow');
+console.log(wowName);
+
+const spanName = document.getElementsByName('name');
+console.log(spanName);
