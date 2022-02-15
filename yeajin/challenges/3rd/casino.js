@@ -3,6 +3,7 @@ const guess=document.querySelector("#choseNum");
 const playButton=document.querySelector("#btn");
 const alarm=document.querySelector("#notice");
 const result=document.querySelector("#result");
+
 function gameStart(event){
   event.preventDefault();
 
@@ -13,7 +14,7 @@ function gameStart(event){
   alarm.innerText=`You chose: ${guessNum}, the machine chose: ${randomNum}`
   if(Number(randomNum)==(guessNum)){
     result.classList.remove("hidden");
-    result.innerText="You Won!";
+    result.innerText="You Won!!";
   }
   else if(Number(rangeNum)<Number(guessNum)){
     result.classList.remove("hidden");
