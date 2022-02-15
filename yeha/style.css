@@ -1,0 +1,29 @@
+/* 2022.02.14 */
+
+.ani {
+    animation: move 1s forwards;
+}
+
+.back {
+    animation: back 1s forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes back {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
