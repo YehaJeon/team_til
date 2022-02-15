@@ -8,14 +8,15 @@
 </head>
 
 <body>
-    <h1>Random Number Game</h1>
+    <h1>숫자를 맞춰 봐!</h1>
     <form class="gameBox">
-        <strong>Generate a number between 0 and</strong>
+        <strong>0과</strong>
         <input id="rangeNum" required type="number" min="0">
+        <strong>사이의 값을 골라 봐</strong>
         <br>
-        Guess the number:
-        <input id="choseNum" required type="number" min="0" max="range">
-        <button id="btn">Play!</button>
+        내가 고른 숫자는 뭐게?:
+        <input id="choseNum" required type="number" min="0" >
+        <button id="btn">과연?</button>
         <p class="hidden" id="notice"></p>
         <p class="hidden" id="result"></p>
 

@@ -11,19 +11,19 @@ function gameStart(event){
   const guessNum=guess.value;
   const randomNum= Math.ceil(Math.random()*rangeNum);
   alarm.classList.remove("hidden");
-  alarm.innerText=`You chose: ${guessNum}, the machine chose: ${randomNum}`
+  alarm.innerText=`너는 ${guessNum}, 나는 ${randomNum}`;
   if(Number(randomNum)==(guessNum)){
     result.classList.remove("hidden");
-    result.innerText="You Won!!";
+    result.innerText="어떻게 알았지?";
   }
   else if(Number(rangeNum)<Number(guessNum)){
     result.classList.remove("hidden");
-    result.innerText="Please choose number in range"
+    result.innerText="아니 사이의 값을 넣으라고ㅜㅜ"
 
   }
   else{
     result.classList.remove("hidden");
-    result.innerText="You lost~";
+    result.innerText="땡~!! 틀렸지롱ㅎ";
   }
 }
 playButton.addEventListener("click", gameStart);
