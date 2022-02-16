@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.toggleOut {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(220, 146, 238);
+  display: flex;
+  align-items: center;
+}
+.toggleIn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(241, 204, 250);
+  margin-left: 6px;
+}
+.move {
+  animation: slideIn 1.5s forwards;
+}
+.moveAgain {
+  animation: slideOut 1.5s forwards;
+}
+.colorChange {
+  animation: bgcConvert 1.5s forwards;
+}
+.colorChangeAgain {
+  animation: bgcConvertAgain 1.5s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes bgcConvert {
+  from {
+    background-color: rgb(241, 204, 250);
+  }
+  to {
+    background-color: rgb(231, 170, 247);
+  }
+}
+@keyframes bgcConvertAgain {
+  from {
+    background-color: rgb(231, 170, 247);
+  }
+  to {
+    background-color: rgb(241, 204, 250);
+  }
+}
