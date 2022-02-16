@@ -69,5 +69,33 @@ console.log(spanName);
 ///test
 ///test
 
-///2022.02.14
+///2022.02.15
+///숫자게임 함수. 더욱 깔끔하게 짜도록 노력해보자
 
+function numberHandler(event) {
+    event.preventDefault();
+    const numberIt = parseInt(numberInput.value) + 1;
+    const guessIt = parseInt(guessInput.value);
+    const number = Math.floor(Math.random() * numberIt);
+    const score = document.querySelector('#textP');
+    const conclusion = document.querySelector('#textH3');
+
+    console.log(number);
+    console.dir(guessInput);
+
+    if (numberInput.value === '' || guessInput.value === '') {
+        console.log('no!');
+    } else if (numberIt < guessIt) {
+        console.log('yes');
+    } else if (guessIt === number) {
+        console.log('you won!');
+        score.innerText = 'you chose:' + guessIt + ' , the machine chose:' + number;
+        conclusion.innerText = 'You won!';
+    } else if (guessIt !== number) {
+        console.log('you lost!');
+        score.innerText = 'you chose:' + guessIt + ' , the machine chose:' + number;
+        conclusion.innerText = 'You lost!';
+    }
+}
+
+gameForm.addEventListener('submit', numberHandler);
