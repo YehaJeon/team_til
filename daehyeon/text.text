@@ -86,3 +86,13 @@ pug 에서 변수를 전달하는 방법에 대해 배웠다. -- render의 두�
 사전 - js의 오브젝트와 비슷, del을 이용해 삭제 key를 이용해 key값 출력 value를 이용해 value 출력
 item 은 value,key 같이 출력 , clear를 이용해 사전 초기화
 튜플 - 바뀌지 않는 자료형 -- 왜 필요한 건지 잘 모르겠다.
+
+2020/02/16
+What I learned:
+1.유튜브 클론코딩 
+iteration 과 mixin 에 대해 배웠다.
+-- iteration vue의 반복문과 비슷, each 변수명 in 객체로 쓰고 리스트 길이 만큼 html 요소 반복
+-- mixin은 반복되는 요소지만 다른 데이터를 주고 싶을때 +mixin(데이터)로 사용한다
+2.파이썬
+자료형 중 set에 대해서 배우고, 자료 변경 방법 배우고, 퀴즈 풀었다.
+-- set은 중복 불가능, 변경 가능
