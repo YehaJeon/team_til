@@ -99,3 +99,21 @@ function numberHandler(event) {
 }
 
 gameForm.addEventListener('submit', numberHandler);
+
+/// 2022.02.16
+///챌린지 진행중 남은일수 빼고 완료.
+
+const date = new Date();
+
+let seconds = parseInt(String(date.getSeconds()).padStart(2, '0'));
+// console.log(seconds);
+seconds = String(59 - seconds).padStart(2, '0');
+// console.log(seconds);
+
+let minutes = parseInt(String(date.getMinutes()).padStart(2, '0'));
+// console.log(minutes);
+minutes = String(59 - minutes).padStart(2, '0');
+// console.log(minutes);
+
+let hour = parseInt(String(date.getHours()).padStart(2, '0'));
+hour = String(23 - hour).padStart(2, '0');
