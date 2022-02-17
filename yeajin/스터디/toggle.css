@@ -50,10 +50,10 @@ body {
 }
 @keyframes bgcConvert {
   from {
-    background-color: rgb(241, 204, 250);
+    background-color: rgb(236, 169, 253);
   }
   to {
-    background-color: rgb(231, 170, 247);
+    background-color: rgb(243, 250, 184);
   }
 }
 @keyframes bgcConvertAgain {
