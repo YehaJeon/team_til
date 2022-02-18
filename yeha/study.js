@@ -142,12 +142,42 @@ const colors = [
 ];
 
 let body = document.querySelector('body');
+
 const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
     let chosencolors1 = colors[Math.floor(Math.random() * colors.length)];
+    const result = colors.filter((color) => color != chosencolors1);
+    console.log(chosencolors1);
+    console.log(result);
     let chosencolors2 = colors[Math.floor(Math.random() * colors.length)];
     console.log(chosencolors1);
     console.log(chosencolors2);
     body.style = `background : linear-gradient(0.25turn, ${chosencolors1},${chosencolors2})`;
+});
+
+///2022.02.18
+///월수금 스터디 - 물체가 마우스커서 따라오게 하기
+const circle = document.querySelector('#circle');
+
+let cnt = 1;
+
+function handleCircle(e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    circle.style.left = mouseX + 'px';
+    circle.style.top = mouseY + 'px';
+}
+
+circle.addEventListener('click', () => {
+    cnt++;
+
+    console.log(cnt);
+
+    if (cnt % 2 == 0) {
+        document.addEventListener('mousemove', handleCircle);
+    } else {
+        document.removeEventListener('mousemove', handleCircle);
+    }
 });
