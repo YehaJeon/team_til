@@ -117,3 +117,37 @@ minutes = String(59 - minutes).padStart(2, '0');
 
 let hour = parseInt(String(date.getHours()).padStart(2, '0'));
 hour = String(23 - hour).padStart(2, '0');
+
+/// 2022.02.17
+
+const colors = [
+    '#ef5777',
+    '#575fcf',
+    '#4bcffa',
+    '#34e7e4',
+    '#0be881',
+    '#f53b57',
+    '#3c40c6',
+    '#0fbcf9',
+    '#00d8d6',
+    '#05c46b',
+    '#ffc048',
+    '#ffdd59',
+    '#ff5e57',
+    '#d2dae2',
+    '#485460',
+    '#ffa801',
+    '#ffd32a',
+    '#ff3f34',
+];
+
+let body = document.querySelector('body');
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    let chosencolors1 = colors[Math.floor(Math.random() * colors.length)];
+    let chosencolors2 = colors[Math.floor(Math.random() * colors.length)];
+    console.log(chosencolors1);
+    console.log(chosencolors2);
+    body.style = `background : linear-gradient(0.25turn, ${chosencolors1},${chosencolors2})`;
+});
