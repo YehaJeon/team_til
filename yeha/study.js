@@ -157,7 +157,7 @@ button.addEventListener('click', () => {
 });
 
 ///2022.02.18
-///월수금 스터디 - 물체가 마우스커서 따라오게 하기
+///월수금 스터디 - 물체가 마우스커서 따라오게 하
 const circle = document.querySelector('#circle');
 
 let cnt = 1;
