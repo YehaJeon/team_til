@@ -97,7 +97,7 @@ iteration 과 mixin 에 대해 배웠다.
 자료형 중 set에 대해서 배우고,  q   자료 변경 방법 배우고, 퀴즈 풀었다.
 -- set은 중복 불가능, 변경 가능
 
-2020/02/16
+2020/02/17
 What I learned:
 1.유튜브 클론코딩 
 post와 get의 차이에 대해 배웠다. 
@@ -105,4 +105,13 @@ post와 get의 차이에 대해 배웠다.
 2.파이썬
 for과 while 조건문에 대해 배웠다.
 --for과 while 모두 반복문이다. while은 if문이랑 병행해서 많이 사용하는 것같다. 
-if,elif,else는 JS랑 거의 똑같다.
+if,elif,else는 JS랑 거의 똑같은 것 같다.
+
+2020/02/18
+What I learned:
+1.유튜브 클론코딩 
+저번에 배웠던 내용 복습하면서 UPLOAD 페이지를 만들었고 ,mongodb를 설치하다가 끝났습니다
+2.파이썬
+continue와 break에 대해배우고 퀴즈를 풀었다
+--continue 조건에 맞는 요소는 스킵하고 진행한다.
+--break 조건에 맞으면 반복문을 탈출한다.
