@@ -99,3 +99,89 @@ function numberHandler(event) {
 }
 
 gameForm.addEventListener('submit', numberHandler);
+
+/// 2022.02.16
+///챌린지 진행중 남은일수 빼고 완료.
+
+const date = new Date();
+
+let seconds = parseInt(String(date.getSeconds()).padStart(2, '0'));
+// console.log(seconds);
+seconds = String(59 - seconds).padStart(2, '0');
+// console.log(seconds);
+
+let minutes = parseInt(String(date.getMinutes()).padStart(2, '0'));
+// console.log(minutes);
+minutes = String(59 - minutes).padStart(2, '0');
+// console.log(minutes);
+
+let hour = parseInt(String(date.getHours()).padStart(2, '0'));
+hour = String(23 - hour).padStart(2, '0');
+
+/// 2022.02.17
+
+const colors = [
+    '#ef5777',
+    '#575fcf',
+    '#4bcffa',
+    '#34e7e4',
+    '#0be881',
+    '#f53b57',
+    '#3c40c6',
+    '#0fbcf9',
+    '#00d8d6',
+    '#05c46b',
+    '#ffc048',
+    '#ffdd59',
+    '#ff5e57',
+    '#d2dae2',
+    '#485460',
+    '#ffa801',
+    '#ffd32a',
+    '#ff3f34',
+];
+
+let body = document.querySelector('body');
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    let chosencolors1 = colors[Math.floor(Math.random() * colors.length)];
+    const result = colors.filter((color) => color != chosencolors1);
+    console.log(chosencolors1);
+    console.log(result);
+    let chosencolors2 = colors[Math.floor(Math.random() * colors.length)];
+    console.log(chosencolors1);
+    console.log(chosencolors2);
+    body.style = `background : linear-gradient(0.25turn, ${chosencolors1},${chosencolors2})`;
+});
+
+///2022.02.18
+///월수금 스터디 - 물체가 마우스커서 따라오게 하기
+const circle = document.querySelector('#circle');
+
+let cnt = 1;
+
+function handleCircle(e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    circle.style.left = mouseX + 'px';
+    circle.style.top = mouseY + 'px';
+}
+
+circle.addEventListener('click', () => {
+    cnt++;
+
+    console.log(cnt);
+
+    if (cnt % 2 == 0) {
+        document.addEventListener('mousemove', handleCircle);
+    } else {
+        document.removeEventListener('mousemove', handleCircle);
+    }
+});
+
+///2022.02.19
+
+//모멘텀todo에 어제 했던 스터디 적용중
