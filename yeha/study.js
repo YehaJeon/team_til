@@ -188,3 +188,51 @@ circle.addEventListener('click', () => {
 
 ///2022.02.20
 //모멘텀수정중
+
+///2022.02.21
+
+//flex froggy를 해보았당
+
+//<justfy-content>
+// flex-start: 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+// flex-end: 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+// center: 요소들을 컨테이너의 가운데로 정렬합니다.
+// space-between: 요소들 사이에 동일한 간격을 둡니다.
+// space-around: 요소들 주위에 동일한 간격을 둡니다.
+
+//<align-items>
+// flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+// flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+// center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+// baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+// stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+//<flex-direction>
+//row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+// row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+// column: 요소들을 위에서 아래로 정렬합니다.
+// column-reverse: 요소들을 아래에서 위로 정렬합니다.
+
+//<order>
+//flex요소의 순서를 정함
+
+//align-self는 개별 요소에 적용할 수 있는 또 다른 속성
+
+//<flex-wrap>
+// nowrap: 모든 요소들을 한 줄에 정렬합니다.
+// wrap: 요소들을 여러 줄에 걸쳐 정렬합니다.
+// wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬합니다.
+
+// flex-direction과 flex-wrap이 자주 같이 사용되기 때문에,
+// flex-flow가 이를 대신할 수 있습니다. 이 속성은 공백문자를 이용하여 두 속성의 값들을 인자로 받습니다.
+
+//<align-content>
+//flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
+// flex-end: 여러 줄들을 컨테이너의 바닥에 정렬합니다.
+// center: 여러 줄들을 세로선 상의 가운데에 정렬합니다.
+// space-between: 여러 줄들 사이에 동일한 간격을 둡니다.
+// space-around: 여러 줄들 주위에 동일한 간격을 둡니다.
+// stretch: 여러 줄들을 컨테이너에 맞도록 늘립니다.
+
+// 이 속성을 사용하는 방법이 어려울 수 있습니다. align-content는 여러 줄들 사이의 간격을 지정하며, align-items는
+// 컨테이너 안에서 어떻게 모든 요소들이 정렬하는지를 지정합니다. 한 줄만 있는 경우, align-content는 효과를 보이지 않습니다.
