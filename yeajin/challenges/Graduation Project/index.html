@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form class="login-form">
-    <input required maxlength="15" type="text" placeholder="What is your name?">
-    <input type="submit" value="Log In"/>
-  </form>
-</body>
-<script src="greetings.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <span></span>
+      <div id="weather">
+      <span></span>
+      <span></span>
+      </div>
+      <form action="https://www.google.com/search" method="GET">
+        <div class="mx-auto mt-5 search-bar input-group mb-3">
+            <input id="search" type="text" class="form-control rounded-pill" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+      </form>
+      <form class="hidden" id="login-form">
+      <input
+      id="name"
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input id="logIn" type="submit" value="" />
+    </form>
+
+    <h2 id="clock">00:00</h2>
+
+    <h1 id="greeting" class="hidden"></h1>
+
+    <form  id="todo-form">
+      <h3 id="question">What is your main focus for today?</h3>
+      <input id="inputbox" type="text" autocomplete="off" required />
+    </form>
+
+    <ul id="todo-list"></ul>    
+
+    <div id="quote">
+      <span></span><br>
+      <span></span>
+    </div>
+  </body> 
+  <script src="clock.js"></script>
+  <script src="quotes.js"></script>
+  <script src="background.js"></script>
+  <script src="todo.js"></script>
+  <script src="weather.js"></script>
+  <script src="greetings.js"></script>
 </html>
