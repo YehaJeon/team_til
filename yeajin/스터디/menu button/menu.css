@@ -35,18 +35,20 @@
   position: absolute;
 }
 .toggle span:nth-child(1) {
-  transform: translateY(-20px);
+  transform: translateY(-19px);
   width: 50px;
   left: 9px;
 }
 .toggle span:nth-child(3) {
-  transform: translateY(20px);
+  transform: translateY(19px);
   width: 30px;
+
   left: 9px;
 }
 .toggle.active span:nth-child(1) {
   transform: translateY(0px) rotate(45deg);
   width: 80px;
+  height: 9px;
 }
 .toggle.active span:nth-child(2) {
   transform: translateX(100px);
@@ -54,4 +56,5 @@
 .toggle.active span:nth-child(3) {
   transform: translateY(0px) rotate(315deg);
   width: 80px;
+  height: 9px;
 }

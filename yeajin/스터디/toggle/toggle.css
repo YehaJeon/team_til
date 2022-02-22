@@ -29,6 +29,10 @@ body {
 .colorChange {
   animation: bgcConvert 1.5s forwards;
 }
+.colorChange {
+  background-color: rgb(253, 104, 104);
+  transition: 1s;
+}
 .colorChangeAgain {
   animation: bgcConvertAgain 1.5s forwards;
 }
