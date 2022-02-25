@@ -1,0 +1,50 @@
+.hidden {
+  display: none;
+}
+.bible {
+  width: 200px;
+  height: 500px;
+  background-color: rgb(204, 183, 223);
+}
+.top {
+  background-color: rgb(241, 227, 163);
+  width: 100vw;
+  height: 70vh;
+}
+.bottom {
+  background-color: rgb(94, 73, 46);
+  width: 100vw;
+  height: 30vh;
+}
+.btnFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+#btn {
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  border: 0ch;
+  background-color: rgb(195, 240, 210);
+  font-size: larger;
+}
+#date {
+  margin: 0px;
+}
+#cross1 {
+  width: 60px;
+  height: 5px;
+  background-color: black;
+}
+#cross2 {
+  width: 5px;
+  height: 80px;
+  background-color: black;
+}
+.crs1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
