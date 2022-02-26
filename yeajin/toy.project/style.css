@@ -9,12 +9,12 @@
 .top {
   background-color: rgb(181, 212, 241);
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
 }
 .bottom {
   background-color: rgb(121, 201, 139);
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
 }
 .btnFlex {
   display: flex;
@@ -57,4 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body {
+  margin: 0;
 }
