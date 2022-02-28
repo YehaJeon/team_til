@@ -100,8 +100,11 @@ body {
   font-family: "Nanum Myeongjo", serif;
 }
 #title {
-  margin-top: 0px;
+  margin-top: 5px;
+  font-size: larger;
+  font-weight: 600;
 }
 #word {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
