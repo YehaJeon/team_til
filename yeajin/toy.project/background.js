@@ -1,6 +1,7 @@
 const colors=[ 
 "rgb(101, 153, 221)",
-"rgb(235, 160, 131)"
+"rgb(235, 160, 131)",
+"rgb(181, 212, 241)";
 ];
 
 const body=document.querySelector(".top");
