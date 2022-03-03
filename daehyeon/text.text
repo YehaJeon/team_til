@@ -178,3 +178,8 @@ What I learned:
 1.유튜브 클론코딩
 RegExp를 이용한 동영상 검색에 성공했다.
 {$regex: new RegExp({})} 이런식으로 만든다.
+
+2020/03/03
+What I learned:
+1.유튜브 클론코딩
+User schema 를 이용하여 User 데이터 전송을 했고, 비밀번호를 해싱을 이용해야하는 이유를 알게되었습니다.
