@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    background-color: grey;
+  }
+}
