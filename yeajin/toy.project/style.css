@@ -1,0 +1,110 @@
+.hidden {
+  display: none;
+}
+
+.top {
+  background-color: rgb(181, 212, 241);
+  width: 100vw;
+  height: 80vh;
+}
+.bottom {
+  background-color: rgb(95, 153, 131);
+  width: 100vw;
+  height: 20vh;
+}
+.btnFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+#btn {
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+  border: 0ch;
+  background-color: rgb(248, 252, 204);
+  font-size: large;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 500px;
+  font-family: "Nanum Myeongjo", serif;
+}
+#date {
+  margin: 0px;
+  padding-left: 30px;
+  padding-top: 25px;
+  font-size: 40px;
+  display: inline-block;
+  font-weight: 1000;
+}
+#cross1 {
+  width: 30px;
+  height: 8px;
+  background-color: rgb(105, 91, 64);
+  margin-bottom: 26px;
+  display: inline-block;
+}
+#cross2 {
+  width: 8px;
+  height: 105px;
+  background-color: rgb(105, 91, 64);
+  display: inline-block;
+}
+#cross3 {
+  width: 30px;
+  height: 8px;
+  background-color: rgb(105, 91, 64);
+  margin-bottom: 26px;
+  display: inline-block;
+}
+.crs1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+}
+#textDiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textDiv2 {
+  width: 340px;
+  height: 490px;
+  margin-top: 50px;
+  border-radius: 29px;
+}
+#textDiv3 {
+  width: 290px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+#cgb {
+  width: 140px;
+  height: 55px;
+  background-color: white;
+  border: 0rem;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  top: 60px;
+  font-family: "Nanum Myeongjo", serif;
+}
+#title {
+  margin-top: 5px;
+  font-size: larger;
+  font-weight: 600;
+}
+#word {
+  margin-bottom: 10px;
+  font-weight: bold;
+}

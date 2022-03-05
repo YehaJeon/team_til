@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casino</title>
+    <link rel="stylesheet" href="casino.css">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>숫자를 맞춰 봐!</h1>
+    <form class="gameBox">
+        <strong>0과</strong>
+        <input id="rangeNum" required type="number" min="0">
+        <strong>사이의 값을 골라 봐</strong>
+        <br>
+        내가 고른 숫자는 뭐게?:
+        <input id="choseNum" required type="number" min="0" >
+        <button id="btn">과연?</button>
+        <p class="hidden" id="notice"></p>
+        <p class="hidden" id="result"></p>
+
+    </form>
+    
+</body>
+<script src="casino.js"></script>
+</html>
