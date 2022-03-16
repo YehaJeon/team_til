@@ -1,0 +1,23 @@
+.you {
+  display: inline-block;
+  width: 50vw;
+  height: 70vh;
+  background-color: rgb(255, 208, 247);
+  position: relative;
+}
+.me {
+  display: inline-block;
+  width: 50vw;
+  height: 70vh;
+  background-color: rgb(151, 217, 255);
+  position: relative;
+  bottom: 00px;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.rsp {
+  font-size: 150px;
+  margin: 0;
+}

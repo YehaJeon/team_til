@@ -1,6 +1,6 @@
 .font {
-  font-size: 200px;
-  font-weight: 550;
+  font-size: 80px;
+  font-weight: 540;
 }
 .margin {
   margin: 0;
@@ -20,24 +20,38 @@
 .green {
   color: #34a853;
 }
-.search-box {
+.searchBox {
   width: 600px;
   height: 40px;
   border: 1px solid black;
   font-size: larger;
   border-radius: 20px;
   text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
+
   display: inline-block;
-  margin-left: 40px;
+
+  margin-top: -100px;
 }
+
 .img1 {
   position: relative;
   right: 170px;
   width: 60px;
 }
+
 .img2 {
   position: relative;
   left: 180px;
+}
+.google-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
