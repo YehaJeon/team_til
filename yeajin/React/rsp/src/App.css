@@ -1,17 +1,23 @@
 .you {
   display: inline-block;
+
   width: 50vw;
-  height: 70vh;
+  height: 100vh;
   background-color: rgb(255, 208, 247);
   position: relative;
+}
+.you1 {
+  text-align: center;
+}
+.me1 {
+  text-align: center;
 }
 .me {
   display: inline-block;
   width: 50vw;
-  height: 70vh;
+  height: 100vh;
   background-color: rgb(151, 217, 255);
-  position: relative;
-  bottom: 00px;
+  position: fixed;
 }
 .App {
   width: 100vw;
@@ -20,4 +26,49 @@
 .rsp {
   font-size: 150px;
   margin: 0;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+.button {
+  background-color: white;
+  border: 0ch;
+  border-radius: 4px;
+  width: 50px;
+  height: 25px;
+  font-size: large;
+  font-weight: 900;
+}
+.reset {
+  background-color: rgb(255, 232, 219);
+  border-radius: 7px;
+  border: 1px solid snow;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  margin-left: 45%;
+  width: 35px;
+}
+.btn1 {
+  text-align: center;
+  margin-left: 10vw;
+}
+.btn2 {
+  text-align: center;
+  margin-left: 2%;
+}
+.btn3 {
+  text-align: center;
+  margin-left: 2%;
+}
+.flex {
+  display: flex;
+  width: 30vw;
+  height: 10vh;
+
+  display: inline-block;
+  margin-left: 8vw;
+}
+.gameResult {
+  text-align: center;
 }
