@@ -11,12 +11,14 @@ function App() {
   let [rsp2,rsp변경2]=useState('!');
   let [gameResult,gameResultF]=useState('Game Result')
   const result=["이김","짐","비김"]
+
 function 가바보변경(){
   const newRsp = [...chosenrsp]
   rsp변경2(newRsp);
 }
  
-const whoWin = useCallback(()=>{
+ gameResultF();
+ {
   if (rsp===rsp2){
     gameResultF(result[2])
     
@@ -31,19 +33,8 @@ const whoWin = useCallback(()=>{
   ){
     gameResultF(result[0])
   }
-  
-},[rsp,rsp2])
+}
 
-
-  
-useEffect(() => {
-  console.log(rsp,rsp2)
-  
-  whoWin()
-  return () => {
-    console.log("cleanup")
-  };
-}, [rsp,rsp2,whoWin]);
   return (
     <div className="App">
       <div className='you'>
