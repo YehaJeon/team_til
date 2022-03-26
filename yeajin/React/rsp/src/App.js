@@ -8,9 +8,9 @@ function App() {
   const group= ['✌️','✊','🖐️'];
   const [chosenrsp,chosenrsp변경]=useState(group[Math.floor(Math.random()*3)]);
   let [rsp,rsp변경]=useState('?');
-  let [rsp2,rsp변경2]=useState('?');
+  let [rsp2,rsp변경2]=useState('!');
   let [gameResult,gameResultF]=useState('Game Result')
-
+  const result=["이김","짐","비김"]
 function 가바보변경(){
   const newRsp = [...chosenrsp]
   rsp변경2(newRsp);
@@ -18,25 +18,32 @@ function 가바보변경(){
  
 const whoWin = useCallback(()=>{
   if (rsp===rsp2){
-    gameResultF("비겼습니다")
+    gameResultF(result[2])
+    
   }
+  
+  
   else if ((rsp==="✊" & rsp2 === "🖐️")|(rsp==="🖐️"&rsp2==="✌️")|(rsp==="✌️"&rsp2==="✊")){
-    gameResultF("졌습니다")
+    gameResultF(result[1])
   }
   else if(
     (rsp==="🖐️" & rsp2 === "✊")|(rsp==="✌️"&rsp2==="🖐️")|(rsp==="✊"&rsp2==="✌️")
   ){
-    gameResultF("이겼습니다")
+    gameResultF(result[0])
   }
   
 },[rsp,rsp2])
 
+
+  
 useEffect(() => {
   console.log(rsp,rsp2)
+  
   whoWin()
-  
+  return () => {
+    console.log("cleanup")
+  };
 }, [rsp,rsp2,whoWin]);
-  
   return (
     <div className="App">
       <div className='you'>
