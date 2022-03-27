@@ -1,9 +1,12 @@
 extends base
 block content 
-    h1 hello
-        form
-            input.id(type="text" name="username" placeholder="username")
-            input(type="submit") 
-            br
-            input.pw(type="password" name="password" placeholder="password")
-            input(type="submit") 
+    h1 
+        
+        div.mem-flex
+            div.member 
+                p.mem-top 계정이 있어요!
+                p.mem-bottom 로그인 하고  시작하기
+                
+            div.non-member 
+                p.non-top 계정이 없어도 편지를 쓸 수 있어요!
+                p.non-bottom 바로 시작하기
