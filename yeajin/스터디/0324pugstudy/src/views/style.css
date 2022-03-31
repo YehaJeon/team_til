@@ -1,0 +1,43 @@
+.member {
+  width: 270px;
+  height: 200px;
+  background-color: rgb(212, 177, 149);
+  margin: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+.non-member {
+  width: 270px;
+  height: 200px;
+  background-color: rgb(212, 177, 149);
+  margin: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+.mem-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 241, 225);
+  flex-direction: column;
+}
+.mem-top {
+  font-size: medium;
+  color: aliceblue;
+  margin-top: 30px;
+}
+.non-top {
+  font-size: medium;
+  color: aliceblue;
+  margin-top: 30px;
+}
+.mem-bottom {
+  color: rgb(51, 45, 34);
+  margin-top: 20px;
+}
+.non-bottom {
+  color: rgb(51, 45, 34);
+  margin-top: 30px;
+}
