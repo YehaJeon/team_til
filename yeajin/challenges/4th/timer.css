@@ -4,4 +4,5 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
+  flex-direction: column;
 }
