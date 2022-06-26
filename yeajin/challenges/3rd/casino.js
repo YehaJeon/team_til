@@ -18,7 +18,7 @@ function gameStart(event){
   }
   else if(Number(rangeNum)<Number(guessNum)){
     result.classList.remove("hidden");
-    result.innerText="아니 사이의 값을 넣으라고ㅜㅜ"
+    result.innerText="사이의 값을 넣으라니까ㅜㅜ"
 
   }
   else{
